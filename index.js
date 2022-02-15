@@ -1,4 +1,3 @@
-const config = require('./config.json')
 const Discord = require('discord.js')
 var express = require('express');
 var http = require('http');
