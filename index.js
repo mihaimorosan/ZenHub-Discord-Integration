@@ -73,11 +73,11 @@ function sendIssueReprioritized(body){
     'attachments': [{
       'pretext': '**Issue Reprioritized**',
       'text': 'Issue "' + body.issue_title
-        + '" was reprioritized from "' + body.from_position
-        + '" to "' + body.to_position
-        + '" by ' + body.user_name  
+        + '" was reprioritized from ' + body.from_position
+        + ' to ' + body.to_position
+        + ' by ' + body.user_name  
         + ' in "' + body.to_pipeline_name + '".\n' + body.github_url,
-      'color': '#F0F',
+      'color': '#FFFF00',
       'footer_icon': 'https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,h_170,w_170,f_auto,b_white,q_auto:eco,dpr_1/v1465258163/u25neqcxwvia6kkbxnrg.jpg',
       'footer': 'Repo: ' + body.repo
         + ' | Workspace: ' + body.workspace_name,
@@ -99,7 +99,7 @@ function sendEstimateSet(body){
         + '" at ' + body.estimate
         + ' story points by ' + body.user_name
         + '.\n' + body.github_url,
-      'color': '#F0F',
+      'color': '#0000FF',
       'footer_icon': 'https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,h_170,w_170,f_auto,b_white,q_auto:eco,dpr_1/v1465258163/u25neqcxwvia6kkbxnrg.jpg',
       'footer': 'Repo: ' + body.repo
         + ' | Workspace: ' + body.workspace_name,
@@ -120,7 +120,7 @@ function sendEstimateCleared(body){
       'text': 'Estimate cleared for "' + body.issue_title
         + '" by ' + body.user_name  
         + '.\n' + body.github_url,
-      'color': '#F0F',
+      'color': '#00FF00',
       'footer_icon': 'https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,h_170,w_170,f_auto,b_white,q_auto:eco,dpr_1/v1465258163/u25neqcxwvia6kkbxnrg.jpg',
       'footer': 'Repo: ' + body.repo
         + ' | Workspace: ' + body.workspace_name,
