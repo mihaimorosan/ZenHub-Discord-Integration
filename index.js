@@ -5,8 +5,8 @@ var http = require('http');
 var bodyParser = require('body-parser');
 
 const data = {
-    id: config.discordServerID,
-    token: config.discordChannelToken
+    id: process.env.DISCORD_SERVER_ID,
+    token: process.env.DISCORD_CHANNEL_TOKEN
 }
 
 console.log('ZENHUB-DISCORD-INTEGRATION V1.0')
