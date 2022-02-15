@@ -19,7 +19,9 @@ console.log('Creating Express App...')
 var app = express();
 console.log('Created Express App\n')
 
-http.createServer(app).listen('6000', function() {
+var port = process.env.PORT || '6000'
+
+http.createServer(app).listen(port, function() {
   console.log('App is listening on 6000\n');
 });
 
